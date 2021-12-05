@@ -1,4 +1,16 @@
 <h1 class="text-center mt-4">Articles Listing</h1>
 
+
+<div class="row justify-content-md-center mb-2">
+    <%= will_paginate @articles, :previous_label => '← Previous', 
+    :next_label => 'Next →'  %>
+</div>
+
 <%= render 'article' %>
+
+
+<div class="row justify-content-md-center mb-2">
+    <%= will_paginate @articles, :previous_label => '← Previous', 
+    :next_label => 'Next →'  %>
+</div>
           
