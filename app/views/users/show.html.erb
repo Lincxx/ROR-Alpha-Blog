@@ -8,4 +8,14 @@
 
 <h3 class="text-center mt-4"><%= @user.username%>'s articles</h3>
 
+<div class="row justify-content-md-center mb-2">
+    <%= will_paginate @articles, :previous_label => '← Previous', 
+    :next_label => 'Next →'  %>
+</div>
+
 <%= render 'articles/article'%>
+
+<div class="row justify-content-md-center mb-2">
+    <%= will_paginate @articles, :previous_label => '← Previous', 
+    :next_label => 'Next →'  %>
+</div>

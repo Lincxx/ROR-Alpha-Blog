@@ -1,5 +1,10 @@
 <h1 class="text-center mt-4">Users</h1>
 
+<div class="row justify-content-md-center mb-2">
+    <%= will_paginate @users, :previous_label => '← Previous', 
+    :next_label => 'Next →'  %>
+</div>
+
 <div class="container">
     <% @users.each do |user| %>
         <div class="row justify-content-center ">
@@ -24,4 +29,9 @@
         </div>
         
     <% end %>
+</div>
+
+<div class="row justify-content-md-center mb-2">
+    <%= will_paginate @users, :previous_label => '← Previous', 
+    :next_label => 'Next →'  %>
 </div>
