@@ -25,6 +25,7 @@ gem 'bcrypt', '~> 3.1.7'
 ######### Gems I Added ############
 gem 'will_paginate', '~> 3.3'
 gem 'will_paginate-bootstrap4'
+gem 'rexml', require: false
 
 
 # Use Active Storage variant
