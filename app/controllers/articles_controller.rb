@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
     before_action :set_article, only: [:show, :edit, :update, :destroy] # this method will be set before any action is fires
     before_action :require_user, expect: [:show, :index]
-    before_action :require_same_user, only: [:edit, :update, :dertroy]
+    before_action :require_same_user, only: [:edit, :update, :destroy]
    
     def show
     end
